@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Floriant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+        <div class="toggle-theme" onclick="toggleTheme()">
+  <i class="fas fa-moon" id="theme-icon"></i>
+</div>
+
+      <div class="logo">Floriant</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+  <button onclick="setLanguage('fr')">FR</button> |
+  <button onclick="setLanguage('en')">EN</button>
+</div>
+
+    </nav>
+  </header>
+
+  
+ <section id="home" class="hero">
+  <div class="hero-content" data-aos="fade-right">
+    <h1>Bonjour, je suis <span class="name">Floriant</span></h1>
+    <h2><span class="animated-text"></span></h2>
+    <p>Étudiant en Génie Logiciel à Bafoussam</p>
+    <a href="#projects" class="btn">Voir mes projets</a>
+
+    <div class="social-icons" data-aos="fade-up">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-img" data-aos="fade-left">
+    <img src="profil.jpg" alt="Profil" />
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-content" data-aos="fade-up">
+    <h2 class="section-title" data-translate="about_title">À propos de moi</h2>
+    <div class="about-wrapper">
+      <div class="about-img">
+        <img src="profil.png" alt="Floriant" />
+      </div>
+      <div class="about-text">
+        <h3>Floriant Takoube</h3>
+        <p data-translate="about_text_1">
+          Je suis un étudiant passionné en Génie Logiciel à l'IAI Bafoussam.
+          Je développe des applications web et mobiles modernes en utilisant des technologies comme PHP, HTML, CSS, JavaScript, et React Native.
+          Mon objectif est de créer des solutions numériques fonctionnelles, esthétiques et efficaces.
+        </p>
+        <p>
+          Dynamique, curieux et rigoureux, je suis constamment en quête de nouveaux défis pour améliorer mes compétences et contribuer à des projets innovants.
+        </p>
+        <a href="#" class="btn" data-translate="download_cv">Télécharger mon CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section Compétences -->
+<section id="skills" class="skills">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Mes compétences</h2>
+
+    <div class="skills-wrapper">
+      <div class="skill">
+        <h3>HTML / CSS</h3>
+        <div class="progress-bar"><div class="progress" style="width: 90%;">90%</div></div>
+      </div>
+
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div class="progress" style="width: 80%;">80%</div></div>
+      </div>
+
+      <div class="skill">
+        <h3>PHP / MySQL</h3>
+        <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
+      </div>
+
+      <div class="skill">
+        <h3>React Native</h3>
+        <div class="progress-bar"><div class="progress" style="width: 70%;">70%</div></div>
+      </div>
+
+      <div class="skill">
+        <h3>Git / GitHub</h3>
+        <div class="progress-bar"><div class="progress" style="width: 75%;">75%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Mes projets</h2>
+
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="react">React Native</button>
+      <button class="filter-btn" data-filter="php">PHP</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+    </div>
+    <div class="project-gallery">
+
+     
+      <div class="project-card" data-aos="zoom-in">
+        <img src="projet1.jpeg" alt="Projet 1">
+        <div class="project-info">
+          <h3>Application de chat</h3>
+          <p>Application mobile de messagerie développée avec React Native + Firebase.</p>
+          <div class="project-links">
+            <a href="#">Code</a>
+            <a href="#">Démo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="projet3.jpeg" alt="Projet 2">
+        <div class="project-info">
+          <h3>Site e-commerce</h3>
+          <p>Site web de vente de vêtements avec panier, admin, et paiement intégré.</p>
+          <div class="project-links">
+            <a href="#">Code</a>
+            <a href="#">Démo</a>
+          </div>
+        </div>
+      </div>
+<div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="projet2.jpeg" alt="Projet 3">
+        <div class="project-info">
+          <h3>Site de gestion de document</h3>
+          <p>Site web de vente de gestion de document avec stokage, admin, et telechagement intégré.</p>
+          <div class="project-links">
+            <a href="#">Code</a>
+            <a href="#">Démo</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Contactez-moi</h2>
+    <form id="contact-form" action="#" method="post" novalidate>
+      <div class="form-group">
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" required placeholder="Votre email" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Sujet du message" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true  
+  });
+</script>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Floriant Takoube. Tous droits réservés.</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  
+  <a href="#home" class="scroll-top" title="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</footer>
+
+</html>
