@@ -19,16 +19,22 @@
         <i class="fas fa-moon" id="theme-icon"></i>
       </div>
       <div class="logo">Floriant</div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div class="lang-switch">
         <button onclick="setLanguage('fr')">FR</button> |
         <button onclick="setLanguage('en')">EN</button>
       </div>
+      
     </nav>
   </header>
 
@@ -236,6 +242,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
+
+  
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    const burger = document.querySelector(".burger");
+    nav.classList.toggle("active");
+    burger.classList.toggle("open");
+  }
+
   </script>
 </body>
 </html>

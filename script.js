@@ -139,3 +139,9 @@ form.addEventListener('submit', (e) => {
     alert('Merci pour votre message ! (fonctionnalité d’envoi à implémenter)');
   }
 });
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  const burger = document.querySelector(".burger");
+  nav.classList.toggle("active");
+  burger.classList.toggle("open");
+}
